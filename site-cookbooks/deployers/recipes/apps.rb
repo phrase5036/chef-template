@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-user = Chef::DataBagItem.load("deployer", 'apps')
+user = Chef::DataBagItem.load("deployers", 'apps')
 user_name = user['name']
 password  = user['password']
 ssh_key   = user['ssh_keys']
