@@ -1,4 +1,6 @@
 DEPENDENCIES
+  deployers
+    path: site-cookbooks/deployers
   nginx (~> 2.7.4)
 
 GRAPH
@@ -6,6 +8,7 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.1.2)
+  deployers (0.1.0)
   nginx (2.7.4)
     apt (~> 2.2)
     bluepill (~> 2.3)
