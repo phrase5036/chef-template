@@ -1,0 +1,9 @@
+{
+  "id": "apps",
+  "name": "apps",
+  "password": "xxx",
+  "ssh_keys": [
+    "xxx",
+    "xxx"
+  ]
+}
