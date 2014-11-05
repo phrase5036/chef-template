@@ -19,6 +19,10 @@
         { "name" : "mini_magick" },
         { "name" : "therubyracer" }
       ]
+    },
+    "locale" : {
+      "lang" : "zh_TW.UTF-8",
+      "lc_all" : "zh_TW.UTF-8"
     }
   },
   "override_attributes": {

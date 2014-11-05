@@ -3,6 +3,7 @@ DEPENDENCIES
     path: site-cookbooks/custom-apt-install
   deployers
     path: site-cookbooks/deployers
+  locale (~> 1.0.2)
   nginx (~> 2.7.4)
   redisio (~> 2.2.4)
   rvm (~> 0.9.2)
@@ -16,6 +17,7 @@ GRAPH
   custom-apt-install (0.1.0)
   deployers (0.1.0)
   java (1.28.0)
+  locale (1.0.2)
   nginx (2.7.4)
     apt (~> 2.2)
     bluepill (~> 2.3)
