@@ -6,6 +6,19 @@
   "default_attributes": {
     "nginx" : {
       "dir" : "/opt/nginx"
+    },
+    "rvm" : {
+      "default_ruby" : "ruby-2.0.0",
+      "user_default_ruby" : "ruby-2.0.0",
+      "rubies" : [ "ruby-2.0.0" ],
+      "user_rubies" : [ "ruby-2.0.0" ],
+      "global_gems" : [
+        { "name" : "rails" },
+        { "name" : "bundler" },
+        { "name" : "mysql2" },
+        { "name" : "mini_magick" },
+        { "name" : "therubyracer" }
+      ]
     }
   },
   "override_attributes": {
