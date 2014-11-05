@@ -1,4 +1,6 @@
 DEPENDENCIES
+  custom-apt-install
+    path: site-cookbooks/custom-apt-install
   deployers
     path: site-cookbooks/deployers
   nginx (~> 2.7.4)
@@ -8,6 +10,7 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.1.2)
+  custom-apt-install (0.1.0)
   deployers (0.1.0)
   nginx (2.7.4)
     apt (~> 2.2)
