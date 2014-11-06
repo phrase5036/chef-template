@@ -6,7 +6,7 @@
     "recipe[custom-apt-install]",
     "recipe[nginx]",
     "recipe[rvm]", "recipe[rvm::gem_package]", "recipe[rvm::system]", "recipe[rvm::system_install]",
-    "recipe[redisio]",
+    "recipe[redisio]","recipe[redisio::enable]",
     "recipe[locale]"
   ]
 }
