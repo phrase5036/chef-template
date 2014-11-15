@@ -4,7 +4,7 @@
   "run_list": [
     "recipe[deployers::ubuntu]", "recipe[deployers::apps]",
     "recipe[custom-apt-install]",
-    "recipe[nginx]","recipe[nginx::passenger]",
+    "recipe[nginx]",
     "recipe[rvm]", "recipe[rvm::gem_package]", "recipe[rvm::system]", "recipe[rvm::system_install]",
     "recipe[redisio]","recipe[redisio::enable]",
     "recipe[locale]"
