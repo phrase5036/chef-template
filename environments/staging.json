@@ -7,8 +7,6 @@
     "nginx" : {
       "user" : "root",
       "dir" : "/opt/nginx"
-      // "script_dir" : "/opt/nginx/sbin",
-      // "binary" : "/opt/nginx/sbin/nginx"
     },
     "rvm" : {
       "default_ruby" : "ruby-2.0.0",
