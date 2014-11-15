@@ -4,6 +4,20 @@
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "default_attributes": {
+    "rvm" : {
+      "default_ruby" : "ruby-2.0.0-p594",
+      "user_default_ruby" : "ruby-2.0.0-p594",
+      "rubies" : [ "ruby-2.0.0-p594" ],
+      "user_rubies" : [ "ruby-2.0.0-p594" ],
+      "global_gems" : [
+        { "name" : "rails" },
+        { "name" : "bundler" },
+        { "name" : "mysql2" },
+        { "name" : "mini_magick" },
+        { "name" : "passenger", "version" : "4.0.53" },
+        { "name" : "therubyracer" }
+      ]
+    },
     "nginx" : {
       "install_method" : "source",
       "dir" : "/opt/nginx/conf",
@@ -14,20 +28,12 @@
           "nginx::http_gzip_static_module",
           "nginx::passenger"
         ]
+      },
+      "passenger" : {
+          "version": "4.0.53",
+          "ruby" : "/usr/local/rvm/rubies/ruby-2.0.0-p594/bin/ruby",
+          "root" : "/usr/local/rvm/gems/ruby-2.0.0-p594@global/gems/passenger-4.0.53"
       }
-    },
-    "rvm" : {
-      "default_ruby" : "ruby-2.0.0",
-      "user_default_ruby" : "ruby-2.0.0",
-      "rubies" : [ "ruby-2.0.0" ],
-      "user_rubies" : [ "ruby-2.0.0" ],
-      "global_gems" : [
-        { "name" : "rails" },
-        { "name" : "bundler" },
-        { "name" : "mysql2" },
-        { "name" : "mini_magick" },
-        { "name" : "therubyracer" }
-      ]
     },
     "locale" : {
       "lang" : "zh_TW.UTF-8",
