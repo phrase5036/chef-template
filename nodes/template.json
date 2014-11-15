@@ -1,0 +1,12 @@
+{
+  "name": "template",
+  "environment": "staging",
+  "run_list": [
+    "recipe[deployers::ubuntu]", "recipe[deployers::apps]",
+    "recipe[custom-apt-install]",
+    "recipe[rvm::system]", "recipe[rvm::gem_package]",
+    "recipe[nginx]",
+    "recipe[redisio]","recipe[redisio::enable]",
+    "recipe[locale]"
+  ]
+}
